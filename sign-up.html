@@ -1,0 +1,158 @@
+{% extends "base.html" %} {% block title %}PLATO5   Start An Account{% endblock %} {% block
+    content %}
+<div class="glassmorphismBox">
+
+    <form method="POST">
+      <label for="">Welcome to PLATO<span style="color: blueviolet;">5</span><br><br>Start an Account and Take the Quiz</label>
+        <br><br>
+        <a href="/login" class="flipBtn">Login Instead</a>
+        <br><br>
+        <input
+          type="email"
+          class="textInStyl"
+          id="email"
+          name="email"
+          placeholder="Email@example.com"
+        />
+        <br><br>
+        <input
+          type="tel"
+          class="textInStyl"
+          id="phoneNum"
+          name="phoneNum"
+          placeholder="(###)-###-####"
+        />
+        <br><br>
+        <input
+          type="text"
+          class="textInStyl"
+          id="firstName"
+          name="firstName"
+          placeholder="First Name"
+        />
+        <br><br>
+        <input
+          type="password"
+          class="textInStyl"
+          id="password1"
+          name="password1"
+          placeholder="Password"
+        />
+        <br><br>
+        <input
+          type="password"
+          class="textInStyl"
+          id="password2"
+          name="password2"
+          placeholder="Retype password"
+        />
+      <br><br>
+        <input
+          type="text"
+          class="textInStyl"
+          id="refCode"
+          name="refCode"
+          placeholder="# Referral Code"
+        />
+      <br><br>
+        <label for="enabLoc">Enable Location  </label>
+          <label class="switch">
+          <input 
+            type="checkbox"
+            class="flipBtn"
+            id="enabLoc"
+            name="enabLoc"
+            value="Enable Location"  
+            checked
+          />
+          <span 
+            class="slider round"
+          ></span>
+          </label>
+      <br><br>
+      <label for="">(Location Needed to Find Friends Near You)</label>
+      <br><br>
+        <button 
+          type="submit" 
+          id="meetSomeoneNew" 
+          class="flipBtn" 
+          style="         
+          text-shadow:      
+          0 1px 1px hsl(0deg 0% 0% / 0.075),
+          0 2px 2px hsl(0deg 0% 0% / 0.075),
+          0 4px 4px hsl(0deg 0% 0% / 0.075),
+          0 8px 8px hsl(0deg 0% 0% / 0.075),
+          0 16px 16px hsl(0deg 0% 0% / 0.075);
+          font-size: 25px;
+          font-family: 'Montserrat', sans-serif;
+          padding: 10px 10px;"
+        >Meet Someone New
+        </button>
+    </form>
+
+</div>
+
+<br><br>
+
+<div class="glassmorphismBoxArticle">
+  <div class="gridContainer">
+    <div>
+      <div class="articleBox">
+        <span>
+          <h3>Staying Safe Online</h3>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="articleBox">
+        <span>
+          <h3>Being Responsible with Meetups</h3>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="articleBox">
+        <span>
+          <h3>Getting to Know PLATO5</h3>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="articleBox">
+        <span>
+          <h3>The Social Engine Vs. Social Media</h3>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="articleBox">
+        <span>
+          <h3>Explaining the Big 5 Personality Traits</h3>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="articleBox">
+        <span>
+          <h3>Assessing the Compatibility of Users (Machine Learning)</h3>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="articleBox">
+        <span>
+          <h3>Exporting Your Persona to the Blockchain</h3>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div class="articleBox">
+        <span>
+          <h3>About Our Team - Contact Us (Aurum Tech LLC)</h3>
+        </span>
+      </div>
+    </div>  
+  </div>
+</div>
+
+{% endblock %}

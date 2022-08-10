@@ -1,0 +1,233 @@
+{% extends "base.html" %} {% block title %}PLATO5 Dashboard{% endblock %} {% block content
+    %}
+
+    <div class="glassmorphismBoxDashboard">
+      <div class="optFlex">
+          <h3 class="DbTitle user" class="font-size:15px">{{ user.first_name }}'s Dashboard</h3>
+          <h3 class="DbTitle logout"><a href='/logout'>Logout</a></h3>
+          <p>Please <a href="/quiz"><u>Take The Quiz</u></a> And/Or <a href="/biometric-setup"><u>Setup Biometric Security</u></a> So You Can Save People To Your Friends List</p>
+      </div>
+
+      <div class="gridContainerD Dashboard1">
+        <div class="contentBox">
+          <div class="profilepic">
+            <button id="editProfBtn" class="editProfBtnStyl" title="Edit Profile">📋</button>
+          </div>
+        <br>
+          <form action="">
+            <textarea class="textInStyl" placeholder="Post an Update"></textarea>
+        <br><br>
+            <span style="display: flex; justify-content: center;">
+              <input class="flipBtn" type="submit" value="Send">
+              <a href="/viewprofile" class="flipBtn" >View Updates</a>
+            </span>
+          </form>
+        </div>
+        <div class="contentBox">
+          <h3>Did you have any pets as a child?</h3>
+          <textarea class="textInStyl" style="height: 50px;" placeholder="Be specific, your answer is used a conversation starter"></textarea><br><br>
+          <input class="flipBtn" type="submit" value="Okay ✓"></input>
+          <a href="/viewprofile" class="flipBtn" type="button">View Answers</a>
+        </div>
+      </div>
+      <div class="gridContainerD Dashboard4">
+        <div id="ad" class="contentBox" style="height: 300px">
+          <div class="commHeading">
+            <h3>Ad Space</h3>
+          </div>
+        </div>
+      </div>
+
+      <!--3 commentary blocks, Culture, Local News, Point of Interest-->
+      <div class="gridContainerD Dashboard2">
+      <div class="contentBox" style="height: 400px;">
+        <div class="commHeading">
+          <h2>Culture</h2>
+          <hr>
+          <h3>Space For Headline</h3>
+          <p>lorem ipsum blah blah blah....</p>
+        </div>
+        <div class="commResponse">
+          <form>
+            <div style="display: flex; justify-content: center;">
+              <input type="button" class="emojiCommResponse" value="🤯" title="Mindblowing">
+              <input type="button" class="emojiCommResponse" value="💖" title="Loving This">
+              <input type="button" class="emojiCommResponse" value="😂" title="Hilarious">
+              <input type="button" class="emojiCommResponse" value="😞" title="Disappointing">
+              <input type="button" class="emojiCommResponse" value="🤮" title="Disturbing">
+            </div>
+                <br><br>
+              <input type="text" class="textInStyl" placeholder="Share your opinion">
+                <br><br>
+              <input type="submit" class="flipBtn" value="Okay ✓">
+        </div>
+          </form>
+      </div>
+      <div class="contentBox" style="height: 400px;">
+        <div class="commHeading">
+          <h2>Local News</h2>
+          <hr>
+          <h3>Space For Headline</h3>
+          <p>lorem ipsum blah blah blah....</p>
+        </div>
+        <div class="commResponse"></span>
+          <form>
+            <div style="display: flex; justify-content: center;">
+              <input type="button" class="emojiCommResponse" value="🤯" title="Mindblowing">
+              <input type="button" class="emojiCommResponse" value="💖" title="Loving This">
+              <input type="button" class="emojiCommResponse" value="😂" title="Hilarious">
+              <input type="button" class="emojiCommResponse" value="😞" title="Disappointing">
+              <input type="button" class="emojiCommResponse" value="🤮" title="Disturbing">
+            </div>
+                <br><br>
+              <input type="text" class="textInStyl" placeholder="Share your opinion">
+                <br><br>
+              <input type="submit" class="flipBtn" value="Okay ✓">
+          </form>
+        </div>
+
+      </div>
+      <div class="contentBox" style="height: 400px;">
+        <div class="commHeading">
+          <h2>Point of Interest</h2>
+          <hr>
+          <h3>Space For Headline</h3>
+          <p>lorem ipsum blah blah blah....</p>
+        </div>
+        <div class="commResponse">
+          <form>
+            <div style="display: flex; justify-content: center;">
+              <input type="button" class="emojiCommResponse" value="🤯" title="Mindblowing">
+              <input type="button" class="emojiCommResponse" value="💖" title="Loving This">
+              <input type="button" class="emojiCommResponse" value="😂" title="Hilarious">
+              <input type="button" class="emojiCommResponse" value="😞" title="Disappointing">
+              <input type="button" class="emojiCommResponse" value="🤮" title="Disturbing">
+            </div>
+                <br><br>
+              <input type="text" class="textInStyl" placeholder="Share your opinion">
+                <br><br>
+              <input type="submit" class="flipBtn" value="Okay ✓">
+          </form>
+        </div>
+      </div>
+    </div>
+
+      <!--#7b9095 NEEDS WORK   Messages Tab (Dialogue Mulitlogue entry) & Favorites List-->
+      <div class="gridContainerD Dashboard1">
+        <div class="contentBox" style="height: 350px; text-align: center; overflow-y: auto;">
+          <div class="commHeading">
+            <h2>Your Messages</h2>
+          </div>
+            <br>
+              <div style="display: flex; margin: 5px;">
+                <h3><a href="/"><u>Fname</u></a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </div>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+              <span style="display: flex; margin: 5px;">
+                <h3><a href="/">Fname</a></h3>
+                  <pre> </pre>
+                <h4><a href="/"> Lorem ipsum dolor sit amet. Ex galisum possimus et nihil itaque et officiis</a></h4>
+              </span>
+            <a href="/viewprofile">See More ➔</a>
+            <br><br>
+        </div>
+
+        <div class="contentBox" style="height: 350px; overflow-y: auto;">
+          <div class="commHeading">
+            <h2>Friends</h2>
+          </div>
+          <br>
+            <a href="/dialogue"><button class="flipBtn">Start A Dialogue</button></a>
+            <br><br>
+            <a href="/multilogue"><button class="flipBtn">Start A Multilogue</button></a>
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <h4><a href="#">Fname: Most recent update.</a></h4>          
+              <h4><a href="#">Fname: Most recent update.</a></h4>
+              <a href="">See More ➔</a>
+              <br><br>
+        </div>
+      </div>
+      <div class="gridContainerD Dashboard3">
+        <div class="contentBox" >
+          <div class="profilepic smaller"></div>
+
+        </div>
+        <div class="contentBox">
+
+        </div>
+        <div class="contentBox">
+
+        </div>
+        <div class="contentBox">
+
+        </div>
+        <div class="contentBox">
+
+        </div>
+        <div class="contentBox">
+
+        </div>
+        <div class="contentBox">
+
+        </div>
+        <div class="contentBox">
+
+        </div>
+      </div>
+      <div class="gridContainerD Dashboard4">
+        <div class="contentBox">
+          <h1 class="flipBtn"><a href="/quiz">Take the Quiz</a></h1>
+        </div>
+      
+      </div>
+    </div>
+
+    {% endblock %}
